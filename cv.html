@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width">
+
+    <style>
+      .topnav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin-bottom: 30px;
+      }
+      .topnav a {
+        padding: 12px 22px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        background: #393939;
+        font-size: 14px;
+        transition: background 0.2s;
+      }
+      .topnav a:hover {
+        background: #555;
+        color: #fff;
+      }
+      .topnav a.active {
+        background: #a82828;
+      }
+    </style>
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -21,16 +47,16 @@
         <p><img src="images/joaquim_meira_headshot.jpeg" alt="Joaquim Meira headshot" style="width:100%; max-width:240px; border-radius:4px;"></p>
 
         <p class="view"><a href="https://www.gov.harvard.edu/directory/joaquim-meira/">Departmental Profile</a></p>
-
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="cv.html">C.V.</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="teaching.html">Teaching</a></li>
-          <li><a href="port.html">Português</a></li>
-        </ul>
       </header>
       <section>
+        <nav class="topnav">
+          <a href="index.html">Home</a>
+          <a href="cv.html" class="active">C.V.</a>
+          <a href="research.html">Research</a>
+          <a href="teaching.html">Teaching</a>
+          <a href="port.html">Português</a>
+        </nav>
+
         <h1>Curriculum Vitae</h1>
 
         <p>You can find my CV <a href="files/CV_Meira.pdf">here</a>, and my <a href="http://lattes.cnpq.br/7920822592422077">Currículo Lattes</a> (in Portuguese) here.</p>
