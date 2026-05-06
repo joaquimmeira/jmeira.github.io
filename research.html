@@ -32,6 +32,37 @@
       .topnav a.active {
         background: #a82828;
       }
+
+      details.abstract {
+        margin: 8px 0 20px 0;
+      }
+      details.abstract summary {
+        cursor: pointer;
+        color: #a82828;
+        font-style: italic;
+        font-size: 0.95em;
+        list-style: none;
+        display: inline-block;
+        user-select: none;
+      }
+      details.abstract summary::-webkit-details-marker {
+        display: none;
+      }
+      details.abstract summary::before {
+        content: "▸ ";
+        display: inline-block;
+        transition: transform 0.15s;
+      }
+      details.abstract[open] summary::before {
+        content: "▾ ";
+      }
+      details.abstract p {
+        margin-top: 10px;
+        padding: 12px 16px;
+        background: #f7f7f7;
+        border-left: 3px solid #a82828;
+        border-radius: 0 4px 4px 0;
+      }
     </style>
 
     <!--[if lt IE 9]>
@@ -63,21 +94,33 @@
 
         <p><strong>Appointments and Disappointments: Revisiting Political Ambition in Brazil</strong> (under review; with <a href="https://www.socsci.ox.ac.uk/people/professor-timothy-power">Timothy J. Power</a> and <a href="https://blogs.cuit.columbia.edu/cz2972/">Cesar Zucco</a>)</p>
 
-        <p><em>Abstract.</em> How do political appointments affect electoral careers? Although there exists a broad literature on political ambition and career trajectories across the globe, little attention has been paid to the role of appointments to cabinet positions and their subnational counterparts. We study this phenomenon in the context of Brazil, a three-tiered federation with multiple appointed positions and possible career paths for politicians. First, we field an elite survey and an expert survey asking Brazilian members of congress and academics respectively to rate the relative status of different appointed and elected positions and employ a novel method to create a ranking from pairwise comparisons. We then assemble an original panel of politicians' career trajectories, including appointed positions. Finally, we test hypotheses on how appointments affect political ambition and electoral success, using matching methods to create comparable groups of appointed and non-appointed politicians. Preliminary results suggest that appointments both boost and launch careers; the appointed have higher chances of running for and winning higher-ranked office than similar politicians who were not appointed to an executive position. We also find that appointments decrease the likelihood that politicians run for lower-ranked positions, which would serve as a "second best" to stay relevant between electoral cycles.</p>
+        <details class="abstract">
+          <summary>Show abstract</summary>
+          <p>How do political appointments affect electoral careers? Although there exists a broad literature on political ambition and career trajectories across the globe, little attention has been paid to the role of appointments to cabinet positions and their subnational counterparts. We study this phenomenon in the context of Brazil, a three-tiered federation with multiple appointed positions and possible career paths for politicians. First, we field an elite survey and an expert survey asking Brazilian members of congress and academics respectively to rate the relative status of different appointed and elected positions and employ a novel method to create a ranking from pairwise comparisons. We then assemble an original panel of politicians' career trajectories, including appointed positions. Finally, we test hypotheses on how appointments affect political ambition and electoral success, using matching methods to create comparable groups of appointed and non-appointed politicians. Preliminary results suggest that appointments both boost and launch careers; the appointed have higher chances of running for and winning higher-ranked office than similar politicians who were not appointed to an executive position. We also find that appointments decrease the likelihood that politicians run for lower-ranked positions, which would serve as a "second best" to stay relevant between electoral cycles.</p>
+        </details>
 
         <p><strong>Breaking the Incumbency Curse? Campaigns and Incumbency Dis(Advantage) in Brazilian Cities</strong> (with <a href="https://lucas-borba.com/">Lucas Borba</a>)</p>
 
-        <p><em>Abstract.</em> The incumbency advantage is an established finding for developed democracies, but many studies identify incumbency disadvantages or null effects in developing countries. While name recognition is widely regarded as a source of incumbency advantage, few analyses investigate whether it is a factor in developing democracies. We exploit exogenous judicial decisions that banned street campaigns in some Brazilian states for the 2020 municipal elections due to the coronavirus pandemic. This allows us to isolate the effects of campaigns, which should be important for challengers to advertise their candidacies, on electoral outcomes. We expect that the ban on street campaigns should favor incumbent candidates, who have a comparative advantage in terms of name recognition among voters. In the absence of canvassing and in-person campaign strategies — very common and important in Brazil — voters should prefer to vote for candidates that they already know rather than taking the risk of voting for unknown challengers. We also investigate effects on voter turnout, which should be lower where campaigns are limited, and on campaign spending strategies, which should shift towards social media.</p>
+        <details class="abstract">
+          <summary>Show abstract</summary>
+          <p>The incumbency advantage is an established finding for developed democracies, but many studies identify incumbency disadvantages or null effects in developing countries. While name recognition is widely regarded as a source of incumbency advantage, few analyses investigate whether it is a factor in developing democracies. We exploit exogenous judicial decisions that banned street campaigns in some Brazilian states for the 2020 municipal elections due to the coronavirus pandemic. This allows us to isolate the effects of campaigns, which should be important for challengers to advertise their candidacies, on electoral outcomes. We expect that the ban on street campaigns should favor incumbent candidates, who have a comparative advantage in terms of name recognition among voters. In the absence of canvassing and in-person campaign strategies — very common and important in Brazil — voters should prefer to vote for candidates that they already know rather than taking the risk of voting for unknown challengers. We also investigate effects on voter turnout, which should be lower where campaigns are limited, and on campaign spending strategies, which should shift towards social media.</p>
+        </details>
 
         <p><strong>Measuring Local Ideology in Heterogeneous Party Systems</strong></p>
 
-        <p><em>Abstract.</em> How does party ideology vary subnationally in Brazil? Although the country is known for its weak party system composed of many heterogeneous parties, there are still no suitable measures of party ideology at the local level. This project attempts to fill this gap by employing supervised machine learning methods. By cross-referencing roll-call voting ideal point estimation with campaign platforms of mayoral candidates and exploiting the fact that many legislators run for mayor, I build a model to infer candidate ideology from the text of their platforms.</p>
+        <details class="abstract">
+          <summary>Show abstract</summary>
+          <p>How does party ideology vary subnationally in Brazil? Although the country is known for its weak party system composed of many heterogeneous parties, there are still no suitable measures of party ideology at the local level. This project attempts to fill this gap by employing supervised machine learning methods. By cross-referencing roll-call voting ideal point estimation with campaign platforms of mayoral candidates and exploiting the fact that many legislators run for mayor, I build a model to infer candidate ideology from the text of their platforms.</p>
+        </details>
 
         <h2>Dissertation Project</h2>
 
         <p><strong>Digital Party-Building</strong></p>
 
-        <p><em>Summary.</em> How do parties get built in the digital age? My book-length dissertation project explores this question in depth, motivated by the surprising party-building successes of political entrepreneurs like Jair Bolsonaro in Brazil and Javier Milei in Argentina. I argue that digital media is the key to the establishment of their political projects as mass movements with strong programmatic identity and legislative discipline. Using social media data, qualitative fieldwork, and leveraging the rollout of mobile internet in Brazil, the project will illustrate the perks and challenges of using digital media to build political organizations.</p>
+        <details class="abstract">
+          <summary>Show summary</summary>
+          <p>How do parties get built in the digital age? My book-length dissertation project explores this question in depth, motivated by the surprising party-building successes of political entrepreneurs like Jair Bolsonaro in Brazil and Javier Milei in Argentina. I argue that digital media is the key to the establishment of their political projects as mass movements with strong programmatic identity and legislative discipline. Using social media data, qualitative fieldwork, and leveraging the rollout of mobile internet in Brazil, the project will illustrate the perks and challenges of using digital media to build political organizations.</p>
+        </details>
 
       </section>
       <footer>
