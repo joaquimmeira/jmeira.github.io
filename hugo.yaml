@@ -34,9 +34,6 @@ languages:
           weight: 30
           params:
             rawURL: "/files/CV_Meira.pdf"
-        - name: Contact
-          url: "/#contact"
-          weight: 40
         - name: Português
           url: "/pt/"
           weight: 50
@@ -57,9 +54,6 @@ languages:
           weight: 30
           params:
             rawURL: "/files/CV_Meira.pdf"
-        - name: Contato
-          url: "/pt/#contact"
-          weight: 40
         - name: English
           url: "/"
           weight: 50

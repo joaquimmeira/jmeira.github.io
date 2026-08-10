@@ -4,13 +4,6 @@
   <div class="hero-text">
     <h1>{{ site.Params.author }}</h1>
     <p class="hero-role">{{ .Params.role }}<br>{{ .Params.department }}<br>{{ .Params.university }}</p>
-    <p class="hero-tagline">{{ .Params.tagline }}</p>
-    <div class="hero-links">
-      <a class="button" href="{{ site.Params.cvFile | relURL }}">{{ i18n "cv_button" }}</a>
-      <a href="mailto:{{ site.Params.email }}">{{ i18n "email" }}</a>
-      <a href="{{ site.Params.departmentalProfile }}" target="_blank" rel="noopener">{{ i18n "dept_profile" }}</a>
-      <a href="{{ site.Params.lattes }}" target="_blank" rel="noopener">Currículo Lattes</a>
-    </div>
   </div>
 </section>
 
@@ -23,7 +16,7 @@
   {{ with .Params.contact_text }}<p>{{ . | markdownify }}</p>{{ end }}
   <div class="contact-links">
     <a href="{{ site.Params.departmentalProfile }}" target="_blank" rel="noopener">{{ i18n "dept_profile" }}</a>
-    <a href="{{ site.Params.lattes }}" target="_blank" rel="noopener">Currículo Lattes</a>
+    <a href="{{ site.Params.lattes }}" target="_blank" rel="noopener">{{ i18n "lattes_label" }}</a>
     <a href="{{ site.Params.cvFile | relURL }}">{{ i18n "cv_button" }}</a>
   </div>
 </section>

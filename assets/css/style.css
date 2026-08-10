@@ -285,35 +285,7 @@ ul {
 .hero-role {
   color: var(--color-text-muted);
   line-height: 1.45;
-  margin-bottom: 0.75rem;
-}
-
-.hero-tagline {
-  margin-bottom: 1rem;
-}
-
-.hero-links {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.75rem 1.25rem;
-  font-size: 0.9375rem;
-}
-
-.button {
-  display: inline-block;
-  background: var(--color-accent);
-  color: #fff;
-  padding: 0.45rem 1rem;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.button:hover,
-.button:focus {
-  background: var(--color-accent-hover);
-  color: #fff;
-  text-decoration: none;
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -321,10 +293,6 @@ ul {
     flex-direction: column;
     text-align: center;
     gap: 1.25rem;
-  }
-
-  .hero-links {
-    justify-content: center;
   }
 }
 

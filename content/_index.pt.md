@@ -3,7 +3,6 @@ title: "Joaquim Meira"
 role: "Doutorando"
 department: "Department of Government"
 university: "Harvard University"
-tagline: "Política comparada, economia política e mídia digital na América Latina."
 contact_text: "Fique à vontade para me contactar por email em [jmeira@fas.harvard.edu](mailto:jmeira@fas.harvard.edu)."
 ---
 
