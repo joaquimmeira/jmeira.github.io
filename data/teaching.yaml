@@ -1,5 +1,6 @@
-# Teaching history, most recent first.
+# Teaching history shown on the website, most recent first.
 # Fields: course, code (optional), role, institution, term, instructor (optional).
+# Pre-Harvard teaching (FGV, UFPE) is intentionally omitted here — it appears only in the CV.
 - course: "Parties and Campaigns in the Digital Age"
   code: "GOV 97"
   role: "Lead Instructor"
@@ -26,27 +27,3 @@
   institution: "Harvard University"
   term: "Fall 2024"
   instructor: "Steven Levitsky"
-
-- course: "Statistics 1B: Causal Inference"
-  role: "Teaching Assistant"
-  institution: "FGV"
-  term: "2020, 2021"
-  instructor: "Cesar Zucco"
-
-- course: "Electoral Institutions"
-  role: "Teaching Assistant"
-  institution: "UFPE"
-  term: "2018"
-  instructor: "Gabriela Tarouco"
-
-- course: "Microeconomics I"
-  role: "Teaching Assistant"
-  institution: "UFPE"
-  term: "2017"
-  instructor: "Paulo Melo-Filho"
-
-- course: "Quantitative Methods II"
-  role: "Teaching Assistant"
-  institution: "UFPE"
-  term: "2017"
-  instructor: "Dalson Figueiredo"

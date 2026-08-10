@@ -49,7 +49,14 @@ Edit `data/teaching.yaml` and add an entry at the top (the list shows in file or
 
 ## Update your CV
 
-Replace `static/files/CV_Meira.pdf` with the new version, **keeping the same filename** (in the repo, open `static/files/`, then **Add file** → **Upload files** and upload a file named exactly `CV_Meira.pdf` — it will replace the old one).
+The CV's LaTeX source lives next to this repo in `Website\cv\cv.tex`. Edit it, then run (in PowerShell, from the `cv` folder):
+
+```powershell
+.\publish-cv.ps1            # compile and copy the PDF into the repo (nothing goes live)
+.\publish-cv.ps1 -Publish   # also commit and push — live on the site in ~2 minutes
+```
+
+Alternatively, replace `static/files/CV_Meira.pdf` with any new PDF, **keeping the same filename** (in the repo, open `static/files/`, then **Add file** → **Upload files** and upload a file named exactly `CV_Meira.pdf` — it will replace the old one).
 
 ## Change your photo
 

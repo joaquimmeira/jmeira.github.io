@@ -1,6 +1,7 @@
 # Working papers and publications.
 # Fields: title, coauthors (name + url), status, venue, abstract, pdf, link.
 # Status vocabulary: published | accepted | revise and resubmit | under review | working paper | work in progress
+# Canonical project descriptions live in Website\papers\*.txt — keep this file in sync with them.
 - title: "Appointments and Disappointments: Revisiting Political Ambition in Brazil"
   coauthors:
     - name: "Timothy J. Power"
@@ -30,34 +31,53 @@
 - title: "The Rise and Fall of the Party for Rent: State Parties and Individual Careers in Brazil"
   status: "under review"
 
-- title: "Breaking the Incumbency Curse? Political Campaigns and the Incumbent's (Dis)Advantage in Brazilian Municipal Elections"
+- title: "Substantive Cues of Candidates' Class: Insights from Brazil"
   coauthors:
-    - name: "Lucas Borba"
-      url: "https://lucas-borba.com/"
+    - name: "Jorge Fernandes"
+      url: "https://www.cchs.csic.es/es/personal/jorge-miguel-alves-fernandes"
+    - name: "Mafalda Pratas"
+      url: "https://www.eui.eu/people?id=mafalda-pratas-fernandes"
+    - name: "Alon Yakter"
+      url: "https://sites.google.com/view/ayakter"
   status: "working paper"
   abstract: >-
-    The incumbency advantage is an established finding for developed democracies, but many
-    studies identify incumbency disadvantages or null effects in developing countries. While name
-    recognition is widely regarded as a source of incumbency advantage, few analyses investigate
-    whether it is a factor in developing democracies. We exploit exogenous judicial decisions
-    that banned street campaigns in some Brazilian states for the 2020 municipal elections due to
-    the coronavirus pandemic. This allows us to isolate the effects of campaigns, which should be
-    important for challengers to advertise their candidacies, on electoral outcomes. We expect
-    that the ban on street campaigns should favor incumbent candidates, who have a comparative
-    advantage in terms of name recognition among voters. In the absence of canvassing and
-    in-person campaign strategies — very common and important in Brazil — voters should prefer to
-    vote for candidates that they already know rather than taking the risk of voting for unknown
-    challengers. We also investigate effects on voter turnout, which should be lower where
-    campaigns are limited, and on campaign spending strategies, which should shift towards social
-    media.
+    Working-class citizens form the majority of the electorate across much of the world, yet they
+    remain starkly underrepresented in elected office. Why do working-class voters so rarely
+    support candidates who share their class position? We argue the puzzle dissolves once
+    descriptive representation is understood not as a fixed preference but as one consideration
+    weighed against others at the ballot box. Class affinity is real but low in priority, readily
+    outweighed by party, ideology, perceived effectiveness, and viability. Class also operates as
+    an evaluative cue, signaling a candidate's effectiveness, ideological commitments, and
+    campaign resources. We test this argument in Brazil, in two parts. Analyzing the registered
+    occupations and vote shares of over 900,000 candidates in municipal council elections, we
+    find that professional candidates enjoy a clear electoral advantage over working-class ones,
+    a gap that widens in poorer and more left-leaning municipalities. A large-scale survey and
+    candidate-choice experiment isolates the underlying mechanisms. Together, the findings show
+    that working-class underrepresentation can persist without any direct anti-worker bias,
+    arising instead from how voters weigh and interpret class under the constrained choices that
+    elections impose.
 
-- title: "Local Party Ideology in Heterogeneous Party Systems"
+- title: "It's Raining Cats and Dogs: The Animal Rights Agenda in Brazil"
+  coauthors:
+    - name: "Lucas Gelape"
+      url: "https://lgelape.github.io/"
   status: "working paper"
   abstract: >-
-    How does party ideology vary subnationally in Brazil? Although the country is known for its
-    weak party system composed of many heterogeneous parties, there are still no suitable
-    measures of party ideology at the local level. This project attempts to fill this gap by
-    employing supervised machine learning methods. By cross-referencing roll-call voting ideal
-    point estimation with campaign platforms of mayoral candidates and exploiting the fact that
-    many legislators run for mayor, I build a model to infer candidate ideology from the text of
-    their platforms.
+    Animal rights have become a salient political platform worldwide, but the comparative
+    literature has studied the phenomenon almost exclusively through dedicated animal advocacy
+    parties. Brazil presents a different model: an animal party has never won a seat, yet "pet
+    politicians" — candidates who campaign and legislate mainly or almost exclusively on
+    domestic-animal issues — thrive across the ideological spectrum. We develop a theory of this
+    candidate-centered "new issue" politics, in which urban demographic change created a mass
+    constituency, compulsory voting and extreme ballot complexity make the pet cause a cheap
+    valence heuristic for disaffected voters, and open-list rules let individual entrepreneurs
+    convert the issue into personal votes within any party. We test its implications with novel
+    data. Using ballot names and 354,854 Instagram campaign posts, we identify animal-agenda
+    candidates in the 2022 elections, describing that population and showing they are
+    concentrated in centrist, personalistic parties. Municipal-level analyses show their vote
+    concentrates in more educated, denser, better-connected municipalities with more blank and
+    null voting. Analyzing 1,608 animal-related bills introduced in the Chamber of Deputies
+    (1991–2026), we document a sharp, recent expansion of the agenda — some 70% of bills come
+    from the two most recent legislatures — a shift from commercial-sanitary regulation toward
+    pet welfare and anti-cruelty punishment, with domestic-animal mentions rising from 20% to
+    nearly 40% of bills, and authorship dispersed across parties while leaning right.
