@@ -1,0 +1,15 @@
+<header class="site-header">
+  <nav class="site-nav" aria-label="{{ i18n "main_nav" }}">
+    <a class="site-name" href="{{ site.Home.RelPermalink }}">{{ site.Params.author }}</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="{{ i18n "menu" }}">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <ul id="site-menu">
+      {{ range site.Menus.main }}
+      <li><a href="{{ with .Params.rawURL }}{{ . }}{{ else }}{{ .URL }}{{ end }}"{{ if eq $.RelPermalink .URL }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>

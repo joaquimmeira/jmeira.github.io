@@ -1,0 +1,35 @@
+{{ define "main" }}
+<article class="page">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.teaching_intro }}<p>{{ . | markdownify }}</p>{{ end }}
+  {{ .Content }}
+
+  {{ $lead := where hugo.Data.teaching "role" "Lead Instructor" }}
+  {{ with $lead }}
+  <h2>{{ i18n "lead_instructor" }}</h2>
+  <ul class="teaching-list">
+    {{ range . }}
+    <li>
+      <span class="course-name">{{ .course }}</span>{{ with .code }} ({{ . }}){{ end }}
+      <span class="course-meta">{{ .institution }} · {{ .term }}</span>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+
+  {{ $fellow := where hugo.Data.teaching "role" "ne" "Lead Instructor" }}
+  {{ with $fellow }}
+  <h2>{{ i18n "teaching_fellow" }}</h2>
+  <ul class="teaching-list">
+    {{ range . }}
+    <li>
+      <span class="course-name">{{ .course }}</span>{{ with .code }} ({{ . }}){{ end }}
+      <span class="course-meta">{{ .institution }} · {{ .term }}{{ with .instructor }} · {{ i18n "instructor" }}: {{ . }}{{ end }}</span>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+
+  {{ with .Params.teaching_note }}<p class="teaching-note">{{ . | markdownify }}</p>{{ end }}
+</article>
+{{ end }}

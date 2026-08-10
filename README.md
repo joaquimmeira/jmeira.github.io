@@ -1,14 +1,12 @@
-# Minimal Theme
+# jmeira.github.io
 
-[Demo the Theme](https://orderedlist.com/minimal/)
+Personal academic website of Joaquim Meira, served at [www.jmeira.com](https://www.jmeira.com).
 
-This is the raw HTML and styles that are used for the *minimal* theme on [GitHub Pages](http://pages.github.com/).
+Built with [Hugo](https://gohugo.io/) and deployed to GitHub Pages via GitHub Actions on every push to `master`.
 
-Syntax highlighting is provided on GitHub Pages by [Pygments](http://pygments.org).
+- **Content**: `content/_index.md` (homepage), `content/research.md`, `content/teaching.md`, `content/_index.pt.md` (Portuguese homepage, at `/pt/`)
+- **Papers / teaching**: YAML files in `data/`
+- **PDFs and images**: `static/files/`, `static/images/`
+- **Styling**: `assets/css/style.css`
 
-# License
-
-This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
-
-
-
+See [UPDATING.md](UPDATING.md) for plain-language editing instructions. The previous version of the site is preserved on the `old-site` branch.

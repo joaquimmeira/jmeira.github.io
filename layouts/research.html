@@ -1,0 +1,36 @@
+{{ define "main" }}
+<article class="page">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  {{ with hugo.Data.dissertation }}
+  <h2>{{ i18n "dissertation_project" }}</h2>
+  <div class="dissertation-card">
+    <p class="paper-title">{{ .title }}</p>
+    <p class="dissertation-summary">{{ .summary }}</p>
+  </div>
+  {{ end }}
+
+  <h2>{{ i18n "working_papers" }}</h2>
+  <ul class="paper-list">
+    {{ range hugo.Data.papers }}
+    <li class="paper">
+      <p class="paper-title">{{ .title }}</p>
+      <p class="paper-meta">
+        {{- with .coauthors -}}
+        <span class="paper-authors">{{ i18n "with_coauthors" }} {{ range $i, $c := . }}{{ if $i }}{{ i18n "and" }}{{ end }}<a href="{{ $c.url }}" target="_blank" rel="noopener">{{ $c.name }}</a>{{ end }}</span>
+        {{- end -}}
+        <span class="status-badge">{{ if eq .status "revise and resubmit" }}R&amp;R{{ else }}{{ .status }}{{ end }}</span>
+        {{- with .venue }}<span class="paper-venue">{{ . }}</span>{{ end -}}
+      </p>
+      {{ with .abstract }}
+      <details class="abstract">
+        <summary>{{ i18n "abstract" }}</summary>
+        <p>{{ . }}</p>
+      </details>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</article>
+{{ end }}

@@ -1,0 +1,70 @@
+baseURL: "https://www.jmeira.com/"
+title: "Joaquim Meira"
+defaultContentLanguage: en
+disableKinds: ["taxonomy", "term"]
+enableRobotsTXT: true
+
+params:
+  author: "Joaquim Meira"
+  description: "Ph.D. Candidate, Department of Government, Harvard University"
+  email: "jmeira@fas.harvard.edu"
+  photo: "/images/photo.jpg"
+  cvFile: "/files/CV_Meira.pdf"
+  departmentalProfile: "https://www.gov.harvard.edu/directory/joaquim-meira/"
+  lattes: "http://lattes.cnpq.br/7920822592422077"
+  mysite:
+    credit: true
+    discovery: true
+
+languages:
+  en:
+    locale: en-US
+    label: English
+    weight: 1
+    menus:
+      main:
+        - name: Research
+          url: "/research/"
+          weight: 10
+        - name: Teaching
+          url: "/teaching/"
+          weight: 20
+        - name: CV
+          url: "/files/CV_Meira.pdf"
+          weight: 30
+          params:
+            rawURL: "/files/CV_Meira.pdf"
+        - name: Contact
+          url: "/#contact"
+          weight: 40
+        - name: Português
+          url: "/pt/"
+          weight: 50
+  pt:
+    locale: pt-BR
+    label: Português
+    weight: 2
+    menus:
+      main:
+        - name: Pesquisa
+          url: "/research/"
+          weight: 10
+        - name: Ensino
+          url: "/teaching/"
+          weight: 20
+        - name: CV
+          url: "/files/CV_Meira.pdf"
+          weight: 30
+          params:
+            rawURL: "/files/CV_Meira.pdf"
+        - name: Contato
+          url: "/pt/#contact"
+          weight: 40
+        - name: English
+          url: "/"
+          weight: 50
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
