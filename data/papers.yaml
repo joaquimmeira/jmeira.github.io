@@ -1,14 +1,15 @@
 # Working papers and publications.
 # Fields: title, coauthors (name + url), status, venue, abstract, pdf, link.
-# Status vocabulary: published | accepted | revise and resubmit | under review | working paper | work in progress
+# Status vocabulary: published | forthcoming | accepted | revise and resubmit | under review | working paper | work in progress
+# published / forthcoming / accepted papers are listed under "Publications"; everything else under "Working Papers".
 # Canonical project descriptions live in Website\papers\*.txt — keep this file in sync with them.
-- title: "Appointments and Disappointments: Revisiting Political Ambition in Brazil"
+- title: "Tapped on the Shoulder: How Executives Influence Electoral Careers in Presidentialism"
   coauthors:
     - name: "Timothy J. Power"
       url: "https://www.socsci.ox.ac.uk/people/professor-timothy-power"
     - name: "Cesar Zucco"
       url: "https://blogs.cuit.columbia.edu/cz2972/"
-  status: "revise and resubmit"
+  status: "forthcoming"
   venue: "Comparative Political Studies"
   abstract: >-
     How do political appointments affect electoral careers? Although there exists a broad
@@ -29,7 +30,7 @@
     best" to stay relevant between electoral cycles.
 
 - title: "The Rise and Fall of the Party for Rent: State Parties and Individual Careers in Brazil"
-  status: "under review"
+  status: "working paper"
 
 - title: "Substantive Cues of Candidates' Class: Insights from Brazil"
   coauthors:

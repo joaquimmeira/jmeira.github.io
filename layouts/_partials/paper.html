@@ -1,0 +1,16 @@
+<li class="paper">
+  <p class="paper-title">{{ .title }}</p>
+  <p class="paper-meta">
+    {{- with .coauthors -}}
+    <span class="paper-authors">{{ i18n "with_coauthors" }} {{ range $i, $c := . }}{{ if $i }}{{ i18n "and" }}{{ end }}<a href="{{ $c.url }}" target="_blank" rel="noopener">{{ $c.name }}</a>{{ end }}</span>
+    {{- end -}}
+    {{- with .status }}<span class="status-badge">{{ if eq . "revise and resubmit" }}R&amp;R{{ else }}{{ . }}{{ end }}</span>{{ end -}}
+    {{- with .venue }}<span class="paper-venue">{{ . }}</span>{{ end -}}
+  </p>
+  {{ with .abstract }}
+  <details class="abstract">
+    <summary>{{ i18n "abstract" }}</summary>
+    <p>{{ . }}</p>
+  </details>
+  {{ end }}
+</li>

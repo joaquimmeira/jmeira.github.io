@@ -19,13 +19,13 @@ Edit `data/papers.yaml`. Each paper looks like this:
     One paragraph abstract here.
 ```
 
-Status options: `published`, `accepted`, `revise and resubmit`, `under review`, `working paper`, `work in progress`.
+Status options: `published`, `forthcoming`, `accepted`, `revise and resubmit`, `under review`, `working paper`, `work in progress`.
 
 To link a PDF: upload it to `static/files/` (in the repo, open that folder → **Add file** → **Upload files**), then the file will be available at `www.jmeira.com/files/your-file.pdf`.
 
 ## Mark a paper as published
 
-In `data/papers.yaml`, change its `status` to `"published"` and set `venue` to the journal name.
+In `data/papers.yaml`, change its `status` to `"forthcoming"` (or `"published"`) and set `venue` to the journal name. Papers with status `published`, `forthcoming`, or `accepted` appear under **Publications** on the Research page; everything else appears under **Working Papers**.
 
 ## Update your bio or tagline
 
